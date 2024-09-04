@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUGAS</title>
+    <link rel="stylesheet" href="destination.css">
+    <style>
+    h2{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .tombol{
+        background-color:#ffffff;
+        color: #000000;
+        text-decoration: none;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 7px;
+        margin: 10px; 
+    }
+    h3{
+        color: #ffffff;
+        margin-left: -20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -65px;
+    }
+    h1{
+        margin: 1px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .thumbnail{ 
+        
+        width: 222.5px;
+        float: right;
+        padding: 50px;
+        transition: transform 0.2s; 
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+        .thumbnail:hover {
+            transform: scale(1.1);
+    }
+    .content{
+        overflow: hidden;
+        text-align: center;
+        min-height: 500px;
+    }
+    .jumbotron{
+        width: 100%;
+        padding: 80px ;
+        box-sizing: border-box;
+        text-align: center;
+        color: #ffffff;
+        background-color: #aaa;
+        background-image:url(pantai.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;    
+    }
+    .search-container{
+        width: 60%;
+        margin: auto;
+        height: 50px;
+        background-color: #ffffff;
+        margin-top: 20px;
+        box-shadow: 5px 5px 5px 5px  rgb(146, 146, 146);
+    }
+    .search-icon{
+        position: relative;
+        float: right;
+        width: 31.5px;
+        height 32px;
+        margin-top: 8.5px ;
+        margin-right: 282.5px;
+        border: 1px solid black;
+    }
+    input{
+        margin-left: 35%;
+        width: 200px;
+        height: 30px;
+        margin-top: 8px;
+        border: 1px solid black;
+    }
+    .Popular{
+        color: rgb(63, 92, 237);
+        border:  1px solid rgb(63, 92, 237);
+        padding: 10px;
+        text-align: center;
+        margin-left: 42.5%;
+        display: inline-block;
+        margin-bottom: 100px;
+        text-decoration: none;
+    }
+    body{
+        font-family: arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+    header{
+        background: url(pantai.jpg) center/cover no-repeat;
+        color: white;
+        text-align: center;
+        padding: 4rem 0;
+        position: relative;
+    }
+    header::before{
+        content: '';
+        position:absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, .5);
+    }
+    header h1{
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+    }
+    nav{
+        background-color: deepskyblue;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        margin: 0 auto;
+    }
+    .logo a {
+        text-decoration: none;
+        color: wheat;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .menu{
+        list-style-type: none;
+        display: flex;
+    }
+    .menu li {
+        margin: 0 1rem;
+    }
+    .menu li a {
+        text-decoration: none;
+        color: wheat;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+    .menu li a:hover{
+        color: hsl(0, 86%, 27%);
+    }
+    .footer{
+        text-align: center;
+        background-color: deepskyblue;
+        color: white;
+        padding: 1rem 0;
+    }
+    .initial {
+        text-align: left;
+        margin: 20px;
+        cursor: pointer;
+        background-color: #999584;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 70px;
+    }
+    .aku{
+        text-align: left;
+        margin: 20px;
+        cursor: pointer;
+        background-color: #9a8526;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 30px;
+        margin: right;
+    }
+    .thumbnail2{ 
+        margin-left: 100px;
+        position-anchor: ;
+        float: left;
+        padding: 50px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 20px;
+        margin-left: 40px;
+        border: 1px solid gray;
+        }
+    .fr{
+    margin-left: 160px;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Jelajah Nusantara</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">Travel & Tours</a>
+            </div>
+            <ul class="menu">
+                <li><a href="beranda_trevel.html">Beranda</a></li>
+                <li><a href="">Hotel</a></li>
+                <li><a href="">Trains</a></li>
+                <li><a href="">Carsrental</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="">Attractions&Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+        <form class="search-container">
+            <input type="text" id="search-bar" placeholder="Search for destinations...">
+            <a href=""> <img src="https://icon-library.com/images/search-icon-png/search-icon-png-24.jpg" alt="" class="search-icon"> </a>
+        </form>
+    <H2 style="font-family: Arial, Helvetica, sans-serif;">Popular Destinations</H2>
+    <a href="" class="tombol"     style="margin-left: 320px;">Bali Island</a>
+    <a href="" class="tombol">Kalimantan Island</a>
+    <a href="" class="tombol">Java Island</a>
+    <a href="" class="tombol">Sumatra Island</a>
+    <a href="" class="tombol">Sulawesi Island</a>
+    <a href="" class="tombol">Papua Island</a>
+    <div class="content">
+        <div class="thumbnail" style="background-image: url(bali2.jpg);">
+           <h3>Bali</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(lombok.jpg);">
+           <h3>Lombok</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(rajaampat.jpg);">
+            <h3>Raja Ampat</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(diengPlateau.jpg);">    
+           <h3>Dieng Plateau</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(balikpapan.jpg);">
+           <h3>Balikpapan</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(pangandaran.jpg);">
+           <h3>Pangandaran</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(togean.jpg);">
+            <h3>Togean</h3>
+        </div>
+        <div class="thumbnail" style="background-image: url(Aceh.jpg);">
+               <h3>Aceh</h3>
+            </div>
+        </div>
+            <a href="" class="Popular"> More Popular Destinations</a>
+            <h1 style="margin-bottom: 40px;">Travel Experiences</h1>
+            <div class="content">
+                <a href="">
+                <div class="thumbnail2 fr" style="background-image: url(muthe.jpg);">
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                </div> </a>
+                <a href="">
+                <div class="thumbnail2" style="background-image: url(lulu.jpg);">
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                </div></a>
+                <a href="">
+                <div class="thumbnail2" style="background-image: url(ashel.jpg);">
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                </div></a>
+                <a href="">
+                <div class="thumbnail2 fr" style="background-image: url(zee.jpg);">    
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                </div></a>
+                <a href="">
+                <div class="thumbnail2" style="background-image: url(michie2.jpg);">
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                </div></a>
+                <a href="">
+                <div class="thumbnail2" style="background-image: url(michie3.jpg);">
+                    <p style="margin-top: 370px;">It's a really good destination...</p>
+                 </div></a>
+                </div>
+         <footer class="footer">
+            <p>&copy; Copy Right 2024 Jelajah Nusantara</p>
+          </footer>
+
+</div>
+</body>
+</html>
