@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" harf="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: url(pantai.jpg) center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 4rem 0;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, .5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        nav {
+            background-color: deepskyblue;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin: 0 auto;
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: wheat;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style-type: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 1rem;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: wheat;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .menu li a:hover {
+            color: hsl(0, 86%, 27%);
+        }
+
+        .footer {
+            text-align: center;
+            background-color: deepskyblue;
+            color: white;
+            padding: 1rem 0;
+        }
+
+
+        body {
+            background-color: #7EBCEE;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .content {
+            background-color: white;
+            height: auto;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .content p {
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+
+        .content input[type="text"],
+        .content input[type="date"],
+        .content input[type="time"] {
+            margin-left: 10px;
+            flex: 1;
+        }
+
+        .content input[type="checkbox"] {
+            margin-left: 5px;
+            margin-right: 10px;
+        }
+
+        .content button {
+            align-self: flex-start;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid blue;
+            background-color: rgb(54, 54, 196);
+            color: white;
+            cursor: pointer;
+        }
+
+        button {
+            padding: 2px;
+            border-radius: 5px;
+            border: 1px solid blue;
+            width: 100px;
+            background-color: rgb(54, 54, 196);
+            color: white;
+        }
+
+        button:hover {
+            background-color: rgb(93, 126, 196);
+        }
+
+
+        .float-right {
+            width: 800px;
+            height: 500px;
+            float: left;
+            padding: 60px;
+
+        }
+
+        .text {
+            margin: 10px;
+            font-size: 20px;
+            padding: 20px;
+            color: rgb(34, 34, 133);
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="pantai.jpg" alt="" width="0px">
+        <h1>Jelajah Nusantara</h1>
+    </header>
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <a href="">Travel & Tours</a>
+            </div>
+            <ul class="menu">
+                <li><a href="beranda_trevel.html">Beranda</a></li>
+                <li><a href="">Hotel</a></li>
+                <li><a href="">Trains</a></li>
+                <li><a href="Tita.html">Carsrental</a></li>
+                <li><a href="">Destinations</a></li>
+                <li><a href="Balqis.html">Attractions&Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+</body>
+
+<body>
+    <div class="text">
+        <p><b>Temukan dan pesan rental kendaraan yang tersedia dengan supir atau tanpa supir.</b></p>
+        <p><b>Jelajah Nusantara menyediakan sewa mobil murah di setiap wilayah Indonesia.</b></p>
+    </div>
+    <div class="img">
+        <img src="Siapp.jpeg" alt="" class="float-right">
+    </div>
+    <div class="container">
+        <div class="content">
+
+
+            <p>Cars Rental <input type="checkbox"> Without Driver <input type="checkbox"> With Driver </p>
+            <p>Your Rental Location</p>
+            <span>
+                <p  style="position: relative;">
+                    <input type="text" placeholder="Enter Location" style="padding-left: 30px;">
+                    <span class="fa fa-map-alt" style="margin-left: 5px; position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: back;">&#xf3c5;</span>
+                </p>
+            </span>
+
+
+            <p>Rental Start Date</p>
+            <p><input type="date"></p>
+            <p>Start Time</p>
+            <p><input type="time"></p>
+            <p>Rental End Date</p>
+            <p><input type="date"></p>
+            <p>End Time</p>
+            <p><input type="time"></p>
+            <p><button>Search Car</button></p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Copy Right 2024 Jelajah Nusantara</p>
+    </footer>
+</body>
+
+</html>
