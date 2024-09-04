@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" harf="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         *{
             margin: 0px;
@@ -22,7 +24,7 @@
             position: relative;
         }
         header::before{
-            content: '';
+            content: "";
             position:absolute;
             top: 0;
             left: 0;
@@ -46,13 +48,19 @@
         }
         .jumbotron{
             width: 100%;
-            padding: 80px 100px;
+            height: 260px;
             box-sizing: border-box;
-            color: white;
-            background-color: rgb(232, 236, 241);
-            background-image: url(sea.jpeg);
-            background-size: cover;
+            background-image: url(awal.jpg);
+            filter: blur(2px);
         } 
+        .jumbotron h1{
+            color: black;
+            font-family: sans-serif;
+        }
+        .jumbotron p{
+            color: black;
+            font-family: sans-serif;
+        }
         .logo a {
             text-decoration: none;
             color: wheat;
@@ -78,7 +86,7 @@
         }
         .menu li a {
             text-decoration: none;
-            color: white;
+            color: wheat;
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -92,6 +100,12 @@
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, .3);
         }
+        .footer{
+            text-align: center;
+            background-color: deepskyblue;
+            color: white;
+            padding: 1rem 0
+        }
         .destinasi {
             margin: 20px;
             margin-bottom: 2rem;
@@ -101,10 +115,11 @@
             align-items: flex-start;
             text-align: center;
         }
-        .destinasi h2{
+        .destinasi h1{
             font-size: 24px;
             margin-bottom: 1rem;
             width: 100%;
+            font-family: serif;
         }
         .destinasi-item{
             background-color: white;
@@ -144,33 +159,11 @@
             border-radius: 15px;
             color: blue;
         }
-        .footer{
-            text-align: center;
-            background-color: deepskyblue;
-            color: white;
-            padding: 1rem 0;
-        }
-        .menu{
-            list-style-type: none;
-            display: flex;
-        }
-        .menu li {
-            margin: 0 1rem;
-        }
-        .menu li a {
-            text-decoration: none;
-            color: wheat;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .menu li a:hover{
-            color: #810a0a;
-        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Jelajah Nusantara</h1>
+        <h1>Jelajahi Nusantara</h1>
     </header>
     <nav>
         <div class="navbar">
@@ -189,67 +182,39 @@
         </div>
     </nav>
     <div class="jumbotron">
-        <h2><b>Attractions & Tours Nusantara</b></h2>
-        <p>Kenapa Memilih yang biasa, jika Anda bisa mendapatkan yang luar biasa? Pilih tour dan Atraksi terbaik yang akan membawa anda ke tempat tempat paling ikonik dengan kenyamanan dan kemudahan Maksimal</p>
+        
+    </div>
+
     </div>
     <section class="destinasi">
-        <h2>Atraksi Populer</h2>
+        <h1>TRAINS.COM</h1>
         <div class="destinasi-item">
-            <img src="waterboom bali.jpeg" alt="tes">
-            <h3>1. Waterbom bali</h3>
-            <p>Taman air dengan bar Kolam renang, Kolam arus, dan beragam wahana. Termasuk sistem pembayarantanpa uang tunai dan pencari reaksi dan penggemar sensasi.</p>
+            <img src="MRR-model-train-scales-GE-P42-1022-600x259.jpg" alt="tes">
+            <h3>1. BEGINNERS</h3>
+            <p>MODEL RAILROADER Model train scales explained</p>
             <button>Detail -></button>
         </div>
         <div class="destinasi-item">
-            <img src="borobudur.jpeg" alt="tes">
-            <h3>2. Borobudur Jawa Tengah</h3>
-            <p>Candi yang di bangun pada abad ke-8 dan ke-9 ini terletak di jawa tengah. Dalam tiga Tingkat, dasar berbentuk persegi dengan lima konsetris.</p>
+            <img src="2.jpg" alt="tes">
+            <h3>2. LOCOMOTIVES</h3>
+            <p>Classic Trains Five forgotten locomotives no one wanted</p>
             <button>Detail -></button>
         </div>
         <div class="destinasi-item">
-            <img src="Tanah.jpeg" alt="tes">
-            <h3>3. Tanah Lot Bali</h3>
-            <p>Bangunan penting di Bali, terkenal karena keunikannya di lepas pantai dan latar belakang matahari terbenam. Kuil kuno yang bertengger di atas batu di tengah-tengah reruntuhan</p>
+            <img src="3.jpg" alt="tes">
+            <h3>3. Beginners</h3>
+            <p>Classic Toy Trains Design a toy train layout</p>
             <button>Detail -></button>
         </div>
         <div class="destinasi-item">
-            <img src="tebing.jpeg" alt="tes">
-            <h3>4. Uluwatu bali</h3>
-            <p>salah satu dari enam pura utama yang diyakini sebagai pilar spiritual Bali, bertengger di atas tebing terjal 70 meter di atas permukaan laut. Juga memiliki latar belakang matahari terbenam yang indah.</p>
-            <button>Detail -></button>
-        </div>
-        </div>
-    </section>
-    <section class="destinasi">
-        <h2>Tours Populer</h2>
-        <div class="destinasi-item">
-            <img src="bromo.jpeg" alt="tour1">
-            <h3>1. Bromo Jawa Timur</h3>
-            <p>Jelajahi Keindahan Surga Jawa Timur yang sempurna dengan Agen perjalanan Terbaik Dan Terpercaya.</p>
-            <button>Detail -></button>
-        </div>
-        <div class="destinasi-item">
-            <img src="ubud.jpeg" alt="tour2">
-            <h3>2. Ubud Bali</h3>
-            <p>Kunjungi ubud pertamakalinya, dapatkan petunjuk arah dengan tur priadi yang menyesuaikan.</p>
-            <button>Detail -></button>
-        </div>
-        <div class="destinasi-item">
-            <img src="nusa.jpeg" alt="tour1">
-            <h3>3. Nusa Penida Bali</h3>
-            <p>Tempat Recomendted bagi yang datang ke bali, bagus untuk foto dan juga cocok untuk foto prawedding.</p>
-            <button>Detail -></button>
-        </div>
-        <div class="destinasi-item">
-            <img src="waterfall bali rahasia.jpeg" alt="tour1">
-            <h3>4. Air Terjun Bali</h3>
-            <p>Air terjun Rahasia yang membuat anda benar benar terkagum. Keajaiban air terjun yang mengalir indah.</p>
+            <img src="4.jpg" alt="tes">
+            <h3>4. ABCs Of Railroading</h3>
+            <p> Trains Magazine Drones are shaping the future of railroading</p>
             <button>Detail -></button>
         </div>
     </section>
-    
-    <div class="footer">
-        <p>&copy;Copy Right 2024 Jelajah Nusantara</p>
-    </div>
+        <footer>
+            <p class="footer">&copy;copy Right 2024 Jelajah Nusantara</p>
+        </footer>
 </body>
-</html>
+</head>
